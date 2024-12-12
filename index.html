@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning (Advanced)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="difficulty-selector">
+            <label for="difficulty">Виберіть рівень складності:</label>
+            <select id="difficulty">
+                <option value="easy">Легкий</option>
+                <option value="medium">Середній</option>
+                <option value="hard">Складний</option>
+            </select>
+            <button id="start-button">Почати</button>
+        </div>
+
+        <div class="game hidden">
+            <div class="card-container">
+                <div class="card"></div>
+                <div class="progress"></div>
+            </div>
+            <input type="text" id="translation-input" placeholder="Введіть переклад">
+            <div class="stats">
+                <div class="correct">
+                    <span class="label">Вірно:</span>
+                    <span class="value">0</span>
+                </div>
+                <div class="incorrect">
+                    <span class="label">Невірно:</span>
+                    <span class="value">0</span>
+                </div>
+            </div>
+            <button id="check-button">Перевірити</button>
+        </div>
+    </div>
+
+    <div class="modal hidden">
+        <div class="modal-content">
+            <p id="result-message"></p>
+            <button id="restart-button">Почати заново</button>
+        </div>
+    </div>
+</body>
+</html>
